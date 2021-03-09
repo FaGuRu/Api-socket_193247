@@ -14,7 +14,7 @@ router.get('/mensajesgit', (req: Request, res: Response) => {
 router.get('/mensajes', (req: Request, res: Response) => {
     res.json({
         ok: true,
-        mensaje: 'GET cambio de git'
+        mensaje: 'GET cambio de git Fabricio'
     });
 });
 
