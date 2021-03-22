@@ -18,27 +18,31 @@ router.get('/mensajes', (req: Request, res: Response) => {
     });
 });
 
-router.post('/mensajes', (req: Request, res: Response) => {
+router.post('/mensajespost', (req: Request, res: Response) => {
 
     const cuerpo = req.body.cuerpo;
     const de = req.body.de;
+    const otro = req.body.otro + " del server";
+    const okreactive = true;
 
     res.json({
-        ok: true,
+        okreactive,
         cuerpo,
-        de
+        de,
+        otro
         // mensaje: 'POST listo!'
     });
 });
 
-router.post('/mensajes/:id', (req: Request, res: Response) => {
+router.post('/mensajespost/:id', (req: Request, res: Response) => {
 
     const cuerpo = req.body.cuerpo;
     const de = req.body.de;
     const id = req.params.id
+    const okreactive = true;
 
     res.json({
-        ok: true,
+        okreactive,
         cuerpo,
         de,
         id
